@@ -1,6 +1,7 @@
 import 'dart:io';
+import 'dart:math';
 
-void main(){
+void calculadora_normal(){
   double resultado = 0;
 
   print("Informe o numero: ");
@@ -16,7 +17,7 @@ void main(){
     }
 
     if(operador != "+" && operador != "-" && operador != "*" && operador != "/"){
-      print("Erro, operador invailo!!");
+      print("Erro, operador inválido!!");
       continue;
     }
     
@@ -42,5 +43,18 @@ void main(){
     print("Parcial: ${resultado}");
   }
   print("Resultado final: ${resultado}");
-  
+}
+
+void raiz_quadrada(){
+  double resultado = 0;
+
+  print("Informe o numero: ");
+  double numero = double.parse(stdin.readLineSync() as String);
+
+  if(numero <= 0){
+    print("Erro, não pode raiz quadrada de numero negativo e nem por 0");
+  }else{
+    resultado = sqrt(numero);
+    print("A raiz quadrada de $numero é $resultado");
+  }
 }
