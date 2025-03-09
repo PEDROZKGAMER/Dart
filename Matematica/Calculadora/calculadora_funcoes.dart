@@ -58,3 +58,61 @@ void raiz_quadrada(){
     print("A raiz quadrada de $numero é $resultado");
   }
 }
+
+void exponencial(){
+  double resultado = 0;
+
+  print("Informe o numero: ");
+  double numero = double.parse(stdin.readLineSync() as String);
+
+  resultado = exp(numero);
+
+  print("$resultado");
+}
+
+void Potenciacao(){
+  double resultado = 0;
+
+  print("Informe qual a potencia: ");
+  double potencia = double.parse(stdin.readLineSync() as String);
+
+  print("Informe valor numero: ");
+  double numero = double.parse(stdin.readLineSync() as String);
+
+  resultado = pow(numero, potencia).toDouble();
+
+  print("O numero $numero elevado a $potencia ==> $resultado");
+}
+
+void cosseno(){
+  double resultado = 0;
+
+  print("Informe valor numero: ");
+  double numero = double.parse(stdin.readLineSync() as String);
+
+  resultado = cos(numero);
+
+  print("O cosseno do numero $numero, é ==> $resultado");
+}
+
+void tangente(){
+  double resultado = 0;
+
+  print("Informe valor numero: ");
+  double numero = double.parse(stdin.readLineSync() as String);
+
+  resultado = tan(numero);
+
+  print("A targente do numero $numero, é ==> $resultado");
+}
+
+void seno(){
+  double resultado = 0;
+
+  print("Informe valor numero: ");
+  double numero = double.parse(stdin.readLineSync() as String);
+
+  resultado = sin(numero);
+
+  print("O seno do número $numero, é ==> $resultado");
+}
