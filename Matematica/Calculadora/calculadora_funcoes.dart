@@ -116,3 +116,18 @@ void seno(){
 
   print("O seno do número $numero, é ==> $resultado");
 }
+
+void Porcentagem(){
+  double resultado = 0;
+
+  print("Informe valor numero: ");
+  double numero = double.parse(stdin.readLineSync() as String);
+
+  print("Informe valor da porcentagem: ");
+  double porcentagem = double.parse(stdin.readLineSync() as String);
+
+  resultado = (numero * porcentagem) / 100;
+
+  print("A porcentagem do valor $numero, é ==> ${resultado.toStringAsFixed(2)}");
+  
+}
